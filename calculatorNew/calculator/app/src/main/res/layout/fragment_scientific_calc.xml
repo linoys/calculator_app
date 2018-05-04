@@ -1,0 +1,268 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_sec_fregment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+    android:orientation="vertical"
+    tools:context="com.calculator.calculator.fregments.SimpleCalc">
+
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="0"
+            android:textColor="@color/colorAccent"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        // Number buttons 1 to 3 and a button of the symbol "+"
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="1"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonTwo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="2"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonThree"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="3"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="+"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+        </LinearLayout>
+
+        // Number buttons 4 to 6 and a button of the symbol "-"
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonFour"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="4"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonFive"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="5"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonSix"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="6"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="-"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        // Number buttons 7 to 9 and a button of the symbol "*"
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSeven"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="7"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonEight"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="8"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonNine"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="9"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonMultiplication"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="*"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        // Buttons of: "/" , "." , "0" , "c"
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPoint"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="."
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonZero"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/background_light"
+                android:text="C"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/buttonDivision"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:text="/"
+                android:textColor="@color/colorAccent"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    // Buttons of: "=" , "%" , "^"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEqual"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:text="="
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/buttonPower"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="^"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="%"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp" />
+
+
+    </LinearLayout>
+</LinearLayout>
